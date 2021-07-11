@@ -1,0 +1,39 @@
+apiVersion: v1
+entries:
+  VAPO Monitoring:
+  - apiVersion: v2
+    appVersion: 2.4.1-alpha.3
+    created: "2021-07-10T22:37:35.410442-04:00"
+    dependencies:
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      tags:
+      - monitoring
+      version: 6.6.4
+    - condition: loki.enabled
+      name: loki
+      repository: https://grafana.github.io/helm-charts
+      tags:
+      - monitoring
+      version: 2.5.0
+    - condition: promtail.enabled
+      name: promtail
+      repository: https://grafana.github.io/helm-charts
+      tags:
+      - monitoring
+      version: 3.5.0
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      tags:
+      - monitoring
+      version: 13.6.0
+    description: VAPO|Veteran Affair
+    digest: d6af2d7510861d6754de05d196f2e73bfd134a5d57c2af58e3f8d2e398ac4150
+    name: VAPO Monitoring
+    type: application
+    urls:
+    - https://hergi2004.github.io/vapo/VAPO%20Monitoring-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-07-10T22:37:35.3983-04:00"
